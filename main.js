@@ -1,5 +1,7 @@
 const countElement = document.querySelector("#count");
 
+updateVisitCount();
+
 function updateVisitCount() {
   fetch("https://api.countapi.xyz/update/john-doe/youtube/?amount=1")
     .then((res) => res.json())
